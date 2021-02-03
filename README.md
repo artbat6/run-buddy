@@ -17,4 +17,4 @@ https://artbat6.github.io/run-buddy/
 
 Made with ❤️ by Arthur Bates
 
-# Run Buddy Inc
+### &copy 2019 Run Buddy, Inc
