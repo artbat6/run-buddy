@@ -12,3 +12,5 @@ https://artbat6.github.io/run-buddy/
 
 ## Contribution
 Made with ❤️ by Arthur Bates
+
+### &copy Run Buddy, Inc
