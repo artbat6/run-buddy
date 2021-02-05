@@ -32,6 +32,7 @@ header h1 {
   font-size: 36px;
   color: #fce138;
   margin: 0;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 header a {
   text-decoration: none;
@@ -54,6 +55,7 @@ header nav ul li a {
   padding: 10px 15px;
   font-weight: lighter;
   font-size: 1.55vw;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 footer {
@@ -110,6 +112,7 @@ background-position: 80%;
   font-style: italic;
   font-size: 55px;
   color: #fce138;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .hero-form {
@@ -140,7 +143,14 @@ background-position: 80%;
   width: 100%;
   margin-bottom: 15px;
   border-radius: 10px;
+  background-color: rgba(255,255,255, 0.75);
 }
+
+.form-input:focus {
+  background-color: rgba(255,255,255, 1);
+  outline: none;
+}
+
 .hero-form label {
   margin: 0 5px;
 }
@@ -191,11 +201,11 @@ background-position: 80%;
   margin: 50px auto;
   padding-bottom: 50px;
   width: 80%;
-  border-bottom: 1px solid #39a6b2;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  border-bottom: 1px solid #39a6b2;
 }
 
 .step-img {
@@ -325,6 +335,12 @@ background-position: 80%;
   margin-bottom: 15px;
   margin-top: 5px;
   border-radius: 10px;
+  background-color: rgba(255,255,255, 0.75);
+}
+.contact-form input,
+.contact-form textarea:focus {
+  background-color: rgba(255,255,255, 1);
+  outline: none;
 }
 
 .contact-form button {
@@ -336,6 +352,7 @@ background-position: 80%;
   padding: 15px 0;
   font-size: 16px;
   border-radius: 10px;
+  width: 100%;
 }
 
 .contact-info a {
@@ -346,21 +363,27 @@ background-position: 80%;
   display: flex;
 }
 
-header h1 {
-  /* add alongside your existing declarations */
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+header nav ul li a:hover {
+  background: #fce138;
+  color: #024e76;
+  border-radius: 15px;
+  text-shadow: none;
 }
 
-header nav ul li a {
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+.hero-form button:hover {
+  background-color: #39a6b2;  
+}
+
+.contact-form button:hover {
+  color: #fce138;
+  background: #39a6b2;
+}
+
+.step:last-child {
+  border-bottom: none;
 }
 
 
-.hero-cta h2 {
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-}
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 /* this will be applied on any screen smaller than 980px */
